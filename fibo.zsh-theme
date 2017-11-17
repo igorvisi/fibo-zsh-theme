@@ -31,7 +31,7 @@ rbenv_version=''
 if which rbenv 2>/dev/null >&2; then
   local rbenv_version="  $(rbenv version-name)"
 fi
-PROMPT="%{$FG[242]%}at%{$reset_color%} %{$FG[009]%}${host}%{$reset_color%} %{$FG[243]%}${nvm_mode}%{$reset_color%}%{$FG[009]%}${rbenv_version}%{$reset_color%} %{$FG[239]%}in%{$reset_color%} %{$terminfo[bold]$FG[003]%}${current_dir}%{$reset_color%}${git_info}${git_status} 
+PROMPT="%{$FG[242]%}at%{$reset_color%} %{$FG[009]%}${host}%{$reset_color%} %{$FG[243]%}${nvm_mode}%{$reset_color%}%{$FG[009]%}${rbenv_version}%{$reset_color%} %{$FG[239]%}in%{$reset_color%} %{$terminfo[bold]$FG[003]%}${current_dir}%{$reset_color%}${git_info}${git_status}%{$reset_color%}
 %{$FG[242]%} %{$reset_color%}${prompt_char}%{$reset_color%}"
 
 
@@ -41,9 +41,9 @@ ZSH_THEME_GIT_PROMPT_DIRTY="%{$fg[red]%}%{$reset_color%} →"
 ZSH_THEME_GIT_PROMPT_AHEAD="%{$fg_bold[red]%}!%{$reset_color%} →"
 ZSH_THEME_GIT_PROMPT_CLEAN="%{$fg[green]%}%{$reset_color%}"
 
-ZSH_THEME_GIT_PROMPT_ADDED="%{$fg[green]%} ✚"
-ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg[blue]%} ✹"
-ZSH_THEME_GIT_PROMPT_DELETED="%{$fg[red]%} ✖"
-ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg[magenta]%} ➜"
-ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg[yellow]%} ═"
+ZSH_THEME_GIT_PROMPT_ADDED="%{$fg_bold[green]%} ✚"
+ZSH_THEME_GIT_PROMPT_MODIFIED="%{$fg_bold[blue]%} ✹"
+ZSH_THEME_GIT_PROMPT_DELETED="%{$fg_bold[red]%} ✖"
+ZSH_THEME_GIT_PROMPT_RENAMED="%{$fg_bold[magenta]%} ➜"
+ZSH_THEME_GIT_PROMPT_UNMERGED="%{$fg_bold[yellow]%} ═"
 ZSH_THEME_GIT_PROMPT_UNTRACKED="%{$fg_bold[cyan]%} ?"
